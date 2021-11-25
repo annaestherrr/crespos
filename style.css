@@ -1,0 +1,147 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        height: 10vh;
+        position: sticky;
+        display: flex;
+        font-size: 13px;
+        font-family: Poiret -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #9767A9;
+    }
+    
+    .box-todecacho {
+        padding-left: 80px;
+        padding-top: 5px;
+    }
+    
+    ul {
+        width: 50%;
+        height: 60px;
+        margin-left: 100px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    li {
+        cursor: pointer;
+    }
+    
+    .dicas {
+        font-weight: bolder;
+    }
+    
+    .box-buscar {
+        height: 20px;
+        width: 50px;
+        margin-left: 70px;
+    }
+    
+    .buscar {
+        height: 40px;
+        width: 150px;
+        margin-top: 10px;
+        border-radius: 50px;
+        color: #9767A9;
+        border: solid #9767A9;
+        position: absolute;
+    }
+    
+    .lupa {
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+    
+    .box-redes-sociais {
+        height: 25px;
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+    
+    .redes-sociais {
+        cursor: pointer;
+    }
+    
+    .front-cover {
+        width: 100%;
+    }
+    
+    main {}
+    
+    .section-one {
+        height: 80vh;
+        width: 100%;
+        background-color: lightgreen;
+    }
+    
+    .cabeludo {
+        height: 100%;
+        background-image: url(/crespos/assets/cabeludo.png);
+        background-size: 100vw 80vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+    }
+    
+    h1 {
+        font-family: Playfair Display;
+        font-size: 70px;
+        color: white;
+        position: absolute;
+        left: 200px;
+        top: 290px;
+    }
+    
+    .frase-cabeludo {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        color: white;
+        font-weight: lighter;
+        position: absolute;
+        left: 900px;
+        top: 350px;
+    }
+    
+    .box-texto {
+        width: 100%;
+        background-color: #9767A9;
+        display: flex;
+        position: absolute;
+    }
+    
+    h2 {
+        width: 55%;
+        height: 100px;
+        padding-left: 80px;
+        padding-top: 20px;
+        font-family: ;
+        font-size: 50px;
+        color: white;
+        font-weight: bolder;
+    }
+    
+    .texto {
+        width: 40%;
+        padding: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: lighter;
+    }
+    
+    .foto-um {
+        height: 450px;
+        width: 500px;
+        position: absolute;
+        top: 190px;
+        left: 145px;
+    }
