@@ -1,921 +1,1026 @@
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Roboto:wght@500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Playfair+Display:wght@900&family=Roboto:wght@500&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        list-style: none;
-        font-family: 'Montserrat';
-        scroll-behavior: smooth;
-    }
-    
-    header {
-        background-color: white;
-        height: 6.5vw;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        position: fixed;
-        z-index: 50;
-        padding-left: 2vw;
-        padding-right: 2vw;
-    }
-    
-    .logo-to-de-cacho {
-        height: 3.2vw;
-        width: 7.2vw;
-        cursor: pointer;
-    }
-    
-    nav ul {
-        height: 1.7vw;
-        width: 50vw;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        padding-left: 4vw;
-    }
-    
-    nav li:hover {
-        font-weight: 900;
-        cursor: pointer;
-    }
-    
-    li {
-        font-size: 1vw;
-        color: #9767A9;
-    }
-    
-    .buscar {
-        position: relative;
-        margin-left: 5.5vw;
-    }
-    
-    .lupa {
-        position: absolute;
-        height: 1.3vw;
-        top: 1.0vh;
-        left: 0.5vw;
-    }
-    
-     ::placeholder {
-        padding-left: 2.5vw;
-        font-size: 1vw;
-    }
-    
-    .barra-buscar {
-        height: 2.3vw;
-        width: 11vw;
-        border-radius: 5vw;
-        color: #9767A9;
-        border: solid #9767A9;
-    }
-    
-    .redes-sociais {
-        height: 3vw;
-        width: 12vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 3vw;
-        cursor: pointer;
-    }
-    
-    .icones-rede-sociais {
-        height: 2.7vw;
-        width: 2.7vw;
-    }
-    
-    .section-cabeludo {
-        height: 80vh;
-        width: 98.7vw;
-    }
-    
-    .cabeludo {
-        height: 100%;
-        background-image: url(/crespos/assets/cabeludo.png);
-        background-size: 100vw 80vh;
-        background-repeat: no-repeat;
-        position: relative;
-        top: 2vw;
-    }
-    
-    h1 {
-        color: white;
-        width: 20vw;
-        height: 10vw;
-        font-size: 4vw;
-        font-family: 'Playfair Display', serif;
-        position: absolute;
-        top: 15vw;
-        left: 15vw;
-    }
-    
-    .box-p-incio {
-        color: white;
-        height: 5vw;
-        width: 25vw;
-        font-size: 2vw;
-        position: absolute;
-        top: 20vw;
-        left: 60vw;
-    }
-    
-    .box-dicas {}
-    
-    .introdução {
-        height: 20vw;
-        width: 98.7vw;
-        background-color: #9767A9;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .titulo-intro {
-        height: 70%;
-        width: 60%;
-        padding-left: 7.6vw;
-        color: white;
-        font-family: 'Playfair Display';
-        font-size: 2vw;
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    .p-intro {
-        height: 70%;
-        width: 30%;
-        color: white;
-        padding-top: 1vw;
-        margin-right: 9vw;
-    }
-    
-    .ps-intro {
-        font-size: 1.1vw;
-    }
-    
-    .dicas-numeradas {
-        position: relative;
-    }
-    
-    .dica-um img {
-        position: absolute;
-        height: 33vw;
-        width: 40vw;
-        left: 8vw;
-        top: -3vw;
-    }
-    
-    .dica-um div {
-        position: absolute;
-        height: 25vw;
-        width: 28vw;
-        background-color: #9767A9;
-        left: 13.5vw;
-        top: 24vw;
-        padding: 2vw;
-        color: white;
-    }
-    
-    .dica-um h3 {
-        font-size: 2vw;
-        text-align: left;
-        font-family: 'Playfair Display';
-        padding-bottom: 1vw;
-    }
-    
-    .dica-um p {
-        font-size: 0.9vw;
-        text-align: left;
-    }
-    
-    .dica-dois img {
-        position: absolute;
-        height: 33vw;
-        width: 40vw;
-        right: 10vw;
-        top: 20vw;
-    }
-    
-    .dica-dois div {
-        position: absolute;
-        height: 23vw;
-        width: 28vw;
-        background-color: #9767A9;
-        right: 15.5vw;
-        top: 45vw;
-        padding: 2vw;
-        color: white;
-    }
-    
-    .dica-dois h3 {
-        font-size: 2vw;
-        text-align: left;
-        font-family: 'Playfair Display';
-        padding-bottom: 1vw;
-    }
-    
-    .dica-dois p {
-        font-size: 1vw;
-        text-align: left;
-    }
-    
-    .dica-tres img {
-        position: absolute;
-        height: 33vw;
-        left: 8vw;
-        top: 50vw;
-    }
-    
-    .dica-tres div {
-        position: absolute;
-        height: 20vw;
-        width: 28vw;
-        background-color: #9767A9;
-        left: 13.5vw;
-        top: 73vw;
-        padding: 2vw;
-        color: white;
-    }
-    
-    .dica-tres h3 {
-        width: 17.5vw;
-        font-size: 2vw;
-        text-align: left;
-        font-family: 'Playfair Display';
-        padding-bottom: 1vw;
-    }
-    
-    .dica-tres p {
-        font-size: 1vw;
-        text-align: left;
-    }
-    
-    .dica-quatro img {
-        position: absolute;
-        height: 33vw;
-        width: 40vw;
-        right: 10vw;
-        top: 72vw;
-    }
-    
-    .dica-quatro div {
-        position: absolute;
-        height: 21vw;
-        width: 28vw;
-        background-color: #9767A9;
-        right: 15.5vw;
-        top: 103vw;
-        padding: 2vw;
-        color: white;
-    }
-    
-    .dica-quatro h3 {
-        width: 25vw;
-        font-size: 1.8vw;
-        text-align: left;
-        font-family: 'Playfair Display';
-        padding-bottom: 1vw;
-    }
-    
-    .dica-quatro p {
-        font-size: 1vw;
-        text-align: left;
-    }
-    
-    .dica-cinco img {
-        position: absolute;
-        height: 33vw;
-        left: 8vw;
-        top: 105vw;
-    }
-    
-    .dica-cinco div {
-        position: absolute;
-        height: 20vw;
-        width: 28vw;
-        background-color: #9767A9;
-        left: 13.5vw;
-        top: 128vw;
-        padding: 2vw;
-        color: white;
-    }
-    
-    .dica-cinco h3 {
-        font-size: 2vw;
-        text-align: left;
-        font-family: 'Playfair Display';
-        padding-bottom: 1vw;
-    }
-    
-    .dica-cinco p {
-        font-size: 1vw;
-        text-align: left;
-    }
-    
-    .dica-seis img {
-        position: absolute;
-        height: 33vw;
-        width: 40vw;
-        right: 10vw;
-        top: 127vw;
-    }
-    
-    .dica-seis div {
-        position: absolute;
-        height: 19vw;
-        width: 28vw;
-        background-color: #9767A9;
-        right: 15.5vw;
-        top: 155vw;
-        padding: 2vw;
-        color: white;
-    }
-    
-    .dica-seis h3 {
-        font-size: 2vw;
-        text-align: left;
-        font-family: 'Playfair Display';
-        padding-bottom: 1vw;
-    }
-    
-    .dica-seis p {
-        font-size: 1vw;
-        text-align: left;
-    }
-    
-    .dica-sete img {
-        position: absolute;
-        height: 33vw;
-        left: 8vw;
-        top: 153vw;
-    }
-    
-    .dica-sete div {
-        position: absolute;
-        height: 17vw;
-        width: 28vw;
-        background-color: #9767A9;
-        left: 13.5vw;
-        top: 176.5vw;
-        padding: 2vw;
-        color: white;
-    }
-    
-    .dica-sete h3 {
-        font-size: 2vw;
-        text-align: left;
-        font-family: 'Playfair Display';
-        padding-bottom: 1vw;
-    }
-    
-    .dica-sete p {
-        font-size: 1vw;
-        text-align: left;
-    }
-    
-    .box-fio-de-cabelo {
-        position: absolute;
-        height: 7vw;
-        width: 30vw;
-        top: 180vw;
-        left: 55.5vw;
-    }
-    
-    .fio-de-cabelo {
-        height: 4.5vw;
-        width: 25vw;
-    }
-    
-    .container-imagens-finais {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .box-imagens-finais {
-        background-color: white;
-        height: 37vw;
-        width: 83vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        position: relative;
-        top: 200vw;
-    }
-    
-    .box-1-2 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .imagens-finais-1 {
-        height: 27vw;
-        width: 23vw;
-    }
-    
-    .imagens-finais-2 {
-        height: 10vw;
-        width: 23vw;
-        padding-top: 0.5vw;
-    }
-    
-    .box-3-4-5 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .imagens-finais-3 {
-        height: 13.5vw;
-        width: 15vw;
-    }
-    
-    .imagens-finais-4 {
-        height: 13.5vw;
-        width: 15vw;
-        padding-top: 0.5vw;
-    }
-    
-    .imagens-finais-5 {
-        height: 10vw;
-        width: 15vw;
-        padding-top: 0.5vw;
-    }
-    
-    .box-6-7 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .imagens-finais-6 {
-        height: 27vw;
-        width: 14vw;
-    }
-    
-    .imagens-finais-7 {
-        height: 10vw;
-        width: 14vw;
-        padding-top: 0.5vw;
-    }
-    
-    .box-8 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .imagens-finais-8 {
-        height: 37vw;
-        width: 16vw;
-    }
-    
-    .box-9-10 {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .imagens-finais-9 {
-        height: 12vw;
-        width: 12vw;
-    }
-    
-    .imagens-finais-10 {
-        height: 25vw;
-        width: 12vw;
-        padding-top: 0.5vw;
-    }
-    /*
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&family=Playfair+Display:wght@900&family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked~nav {
+    transform: translateX(35vw);
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu {
+    background-color: #9767A9;
+    width: 35vw;
+    height: 50vw;
+    position: absolute;
+    left: -35vw;
+    top: 15vw;
+    transition: all 0.5s;
+}
+
+.nav-menu ul {
+    height: 50vw;
+    position: absolute;
+    top: 0vw;
+    left: 3vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu p {
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    color: white;
+    font-size: 3vw;
+}
+
+.nav-menu p:hover {
+    cursor: pointer;
+    background-color: #AC95BB;
+}
+
+label img {
+    width: 18.5vw;
+}
+
+label {
+    padding: 0.1vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.container-menu {
+    display: none;
+    position: relative;
+    left: -40vw;
+    top: -8vw;
+}
+
+header {
+    background-color: white;
+    height: 6.5vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.logo-to-de-cacho {
+    height: 3.2vw;
+    width: 7.2vw;
+    cursor: pointer;
+}
+
+nav ul {
+    height: 1.7vw;
+    width: 50vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4vw;
+}
+
+nav li:hover {
+    font-weight: 900;
+    cursor: pointer;
+}
+
+li {
+    font-size: 1vw;
+    color: #9767A9;
+}
+
+.buscar {
+    position: relative;
+    margin-left: 5.5vw;
+}
+
+.lupa {
+    position: absolute;
+    height: 1.3vw;
+    top: 1.0vh;
+    left: 0.5vw;
+}
+
+ ::placeholder {
+    padding-left: 2.5vw;
+    font-size: 1vw;
+}
+
+.barra-buscar {
+    height: 2.3vw;
+    width: 11vw;
+    border-radius: 5vw;
+    color: #9767A9;
+    border: solid #9767A9;
+}
+
+.redes-sociais {
+    height: 3vw;
+    width: 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3vw;
+    cursor: pointer;
+}
+
+.icones-rede-sociais {
+    height: 2.7vw;
+    width: 2.7vw;
+}
+
+.section-cabeludo {
+    height: 80vh;
+    width: 98.7vw;
+}
+
+.cabeludo {
+    height: 100%;
+    background-image: url(/crespos/assets/cabeludo.png);
+    background-size: 100vw 80vh;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 2vw;
+}
+
+h1 {
+    color: white;
+    width: 20vw;
+    height: 10vw;
+    font-size: 4vw;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 15vw;
+    left: 15vw;
+}
+
+.box-p-incio {
+    color: white;
+    height: 5vw;
+    width: 25vw;
+    font-size: 2vw;
+    position: absolute;
+    top: 20vw;
+    left: 60vw;
+}
+
+.introdução {
+    height: 20vw;
+    width: 98.7vw;
+    background-color: #9767A9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titulo-intro {
+    height: 70%;
+    width: 60%;
+    padding-left: 7.6vw;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 2vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.p-intro {
+    height: 70%;
+    width: 30%;
+    color: white;
+    padding-top: 1vw;
+    margin-right: 9vw;
+}
+
+.ps-intro {
+    font-size: 1.1vw;
+}
+
+.dicas-numeradas {
+    position: relative;
+}
+
+.dica-um img {
+    position: absolute;
+    height: 33vw;
+    width: 40vw;
+    left: 8vw;
+    top: -3vw;
+}
+
+.dica-um div {
+    position: absolute;
+    height: 25vw;
+    width: 28vw;
+    background-color: #9767A9;
+    left: 13.5vw;
+    top: 24vw;
+    padding: 2vw;
+    color: white;
+}
+
+.dica-um h3 {
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Playfair Display';
+    padding-bottom: 1vw;
+}
+
+.dica-um p {
+    font-size: 0.9vw;
+    text-align: left;
+}
+
+.dica-dois img {
+    position: absolute;
+    height: 33vw;
+    width: 40vw;
+    right: 10vw;
+    top: 20vw;
+}
+
+.dica-dois div {
+    position: absolute;
+    height: 23vw;
+    width: 28vw;
+    background-color: #9767A9;
+    right: 15.5vw;
+    top: 45vw;
+    padding: 2vw;
+    color: white;
+}
+
+.dica-dois h3 {
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Playfair Display';
+    padding-bottom: 1vw;
+}
+
+.dica-dois p {
+    font-size: 1vw;
+    text-align: left;
+}
+
+.dica-tres img {
+    position: absolute;
+    height: 33vw;
+    left: 8vw;
+    top: 50vw;
+}
+
+.dica-tres div {
+    position: absolute;
+    height: 20vw;
+    width: 28vw;
+    background-color: #9767A9;
+    left: 13.5vw;
+    top: 73vw;
+    padding: 2vw;
+    color: white;
+}
+
+.dica-tres h3 {
+    width: 17.5vw;
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Playfair Display';
+    padding-bottom: 1vw;
+}
+
+.dica-tres p {
+    font-size: 1vw;
+    text-align: left;
+}
+
+.dica-quatro img {
+    position: absolute;
+    height: 33vw;
+    width: 40vw;
+    right: 10vw;
+    top: 72vw;
+}
+
+.dica-quatro div {
+    position: absolute;
+    height: 21vw;
+    width: 28vw;
+    background-color: #9767A9;
+    right: 15.5vw;
+    top: 103vw;
+    padding: 2vw;
+    color: white;
+}
+
+.dica-quatro h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    text-align: left;
+    font-family: 'Playfair Display';
+    padding-bottom: 1vw;
+}
+
+.dica-quatro p {
+    font-size: 1vw;
+    text-align: left;
+}
+
+.dica-cinco img {
+    position: absolute;
+    height: 33vw;
+    left: 8vw;
+    top: 105vw;
+}
+
+.dica-cinco div {
+    position: absolute;
+    height: 20vw;
+    width: 28vw;
+    background-color: #9767A9;
+    left: 13.5vw;
+    top: 128vw;
+    padding: 2vw;
+    color: white;
+}
+
+.dica-cinco h3 {
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Playfair Display';
+    padding-bottom: 1vw;
+}
+
+.dica-cinco p {
+    font-size: 1vw;
+    text-align: left;
+}
+
+.dica-seis img {
+    position: absolute;
+    height: 33vw;
+    width: 40vw;
+    right: 10vw;
+    top: 127vw;
+}
+
+.dica-seis div {
+    position: absolute;
+    height: 19vw;
+    width: 28vw;
+    background-color: #9767A9;
+    right: 15.5vw;
+    top: 155vw;
+    padding: 2vw;
+    color: white;
+}
+
+.dica-seis h3 {
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Playfair Display';
+    padding-bottom: 1vw;
+}
+
+.dica-seis p {
+    font-size: 1vw;
+    text-align: left;
+}
+
+.dica-sete img {
+    position: absolute;
+    height: 33vw;
+    left: 8vw;
+    top: 153vw;
+}
+
+.dica-sete div {
+    position: absolute;
+    height: 17vw;
+    width: 28vw;
+    background-color: #9767A9;
+    left: 13.5vw;
+    top: 176.5vw;
+    padding: 2vw;
+    color: white;
+}
+
+.dica-sete h3 {
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Playfair Display';
+    padding-bottom: 1vw;
+}
+
+.dica-sete p {
+    font-size: 1vw;
+    text-align: left;
+}
+
+.box-fio-de-cabelo {
+    position: absolute;
+    height: 7vw;
+    width: 30vw;
+    top: 180vw;
+    left: 55.5vw;
+}
+
+.fio-de-cabelo {
+    height: 4.5vw;
+    width: 25vw;
+}
+
+.box-grid {
+    height: 50vw;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: 195vw;
+}
+
+.img-grid1 {
+    height: 34.5vw;
+    width: 22vw;
+    grid-column: 1;
+    grid-row-end: 3;
+    grid-row-start: 1;
+}
+
+.img-grid2 {
+    height: 12vw;
+    width: 22vw;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.img-grid3 {
+    height: 17vw;
+    width: 14vw;
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 1vw;
+}
+
+.img-grid4 {
+    height: 16vw;
+    width: 14vw;
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 1vw;
+}
+
+.img-grid5 {
+    height: 12vw;
+    width: 14vw;
+    grid-column: 2;
+    grid-row: 3;
+    padding-left: 1vw;
+}
+
+.img-grid6 {
+    height: 34.5vw;
+    width: 16vw;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-left: 1vw;
+}
+
+.img-grid7 {
+    height: 12vw;
+    width: 16vw;
+    grid-column: 3;
+    grid-row: 3;
+    padding-left: 1vw;
+}
+
+.img-grid8 {
+    height: 48vw;
+    width: 22vw;
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding-left: 1vw;
+}
+
+.img-grid9 {
+    height: 17vw;
+    width: 13.5vw;
+    grid-column: 5;
+    grid-row: 1;
+    padding-left: 1vw;
+}
+
+.img-grid10 {
+    height: 29.5vw;
+    width: 13.5vw;
+    grid-column: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding-left: 1vw;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+.referencias-mobile {
+    display: none;
+}
+
 .box-footer {
-background-color: #9767A9;
-height: 6vw;
-width: 98.6vw;
-position: relative;
-top: 202vw;
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 2vw;
+    background-color: #9767A9;
+    height: 6vw;
+    width: 98.6vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2vw;
+    position: relative;
+    top: 198vw;
 }
 
 .box-p-footer {
-height: 3vw;
-width: 50vw;
-color: white;
-font-size: 0.8vw;
+    height: 3vw;
+    width: 50vw;
+    color: white;
+    font-size: 0.8vw;
 }
 
-:link {
-text-decoration: none;
-color: white;
+ :link {
+    text-decoration: none;
+    color: white;
 }
 
 .box-setas-footer {
-height: 3vw;
-width: 25vw;
-display: flex;
-align-items: center;
+    height: 3vw;
+    width: 25vw;
+    display: flex;
+    align-items: center;
 }
 
 .img-footer {
-height: 5vw;
-width: 4vw;
-cursor: pointer;
+    height: 5vw;
+    width: 4vw;
+    cursor: pointer;
 }
 
 .direção {
-display: flex;
-color: white;
-font-size: 0.8vw;
+    display: flex;
+    color: white;
+    font-size: 0.8vw;
 }
 
 
 /*mobile style*/
-    
-    @media(max-width: 480px) {
-        header {
-            height: 50px;
-        }
-        .logo-to-de-cacho {
-            height: 40px;
-            width: auto;
-        }
-        nav {
-            display: none;
-        }
-        .buscar {
-            display: none;
-        }
-        .redes-sociais {
-            display: none;
-        }
-        .section-cabeludo {
-            height: 60vh;
-            width: 100vw;
-        }
-        .cabeludo {
-            height: 100%;
-            background-image: url(/crespos/assets/cabeludo@2x.png);
-            background-size: 100vw 60vh;
-            background-repeat: no-repeat;
-            position: relative;
-        }
-        h1 {
-            border: solid red;
-            height: 30vw;
-            width: 60vw;
-            position: relative;
-            left: 20px;
-            top: 70px;
-            font-size: 12vw;
-            font-family: 'Playfair Display';
-        }
-        .box-p-incio {
-            border: solid red;
-            height: 20vw;
-            width: 57vw;
-            position: absolute;
-            top: 180px;
-            left: 20px;
-        }
-        .p-inicio {
-            font-size: 5vw;
-        }
-        .introdução {
-            height: 83vw;
-            width: 100vw;
-            background-color: #9767A9;
-            position: relative;
-        }
-        .titulo-intro {
-            border: solid blue;
-            height: 50px;
-            width: 73vw;
-            color: white;
-            font-family: 'Playfair Display';
-            font-size: 3vw;
-            position: absolute;
-            left: 30px;
-            top: 0;
-            padding: 0;
-        }
-        .p-intro {
-            border: solid red;
-            height: 60vw;
-            width: 80vw;
-            color: white;
-            position: absolute;
-            top: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            left: 30px;
-        }
-        .ps-intro {
-            font-size: 3.2vw;
-            padding-top: 0;
-        }
-        .dicas-numeradas {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        .dica-um img {
-            height: 40vw;
-            width: 84vw;
-            top: 10px;
-        }
-        .dica-um div {
-            height: 95vw;
-            width: 100%;
-            top: 28vw;
-            left: 0;
-            background-color: #9767A9;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-left: 7vw;
-        }
-        .dica-um h3 {
-            height: 15vw;
-            width: 53vw;
-            font-size: 5vw;
-            font-family: 'Playfair Display';
-        }
-        .dica-um p {
-            border: solid blanchedalmond;
-            font-size: 3.5vw;
-            padding-top: 1.5vw;
-            width: 80vw;
-        }
-        .dica-dois img {
-            height: 50vw;
-            width: 84vw;
-            top: 125vw;
-            left: 8vw;
-        }
-        .dica-dois div {
-            height: 105vw;
-            width: 100%;
-            top: 170vw;
-            left: 0;
-            background-color: #9767A9;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-left: 7vw;
-        }
-        .dica-dois h3 {
-            border: solid greenyellow;
-            height: 10vw;
-            width: 60vw;
-            font-size: 5vw;
-            font-family: 'Playfair Display';
-        }
-        .dica-dois p {
-            border: solid greenyellow;
-            font-size: 3.5vw;
-            text-align: left;
-            padding-top: 5vw;
-            width: 85vw;
-        }
-        .dica-tres img {
-            height: 50vw;
-            width: 84vw;
-            top: 277vw;
-        }
-        .dica-tres div {
-            height: 65vw;
-            width: 100%;
-            top: 320vw;
-            left: 0;
-            background-color: #9767A9;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-left: 30px;
-        }
-        .dica-tres h3 {
-            border: solid #9767A9;
-            height: 15vw;
-            width: 45vw;
-            font-size: 5vw;
-            font-family: 'Playfair Display';
-        }
-        .dica-tres p {
-            font-size: 3.5vw;
-            text-align: left;
-            width: 75vw;
-        }
-        .dica-quatro img {
-            height: 50vw;
-            width: 84vw;
-            top: 387vw;
-            left: 8vw;
-        }
-        .dica-quatro div {
-            height: 65vw;
-            width: 100%;
-            top: 435vw;
-            left: 0;
-            background-color: #9767A9;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-left: 7vw;
-        }
-        .dica-quatro h3 {
-            border: solid greenyellow;
-            height: 10vw;
-            width: 70vw;
-            font-size: 5vw;
-            font-family: 'Playfair Display';
-        }
-        .dica-quatro p {
-            font-size: 3.5vw;
-            text-align: left;
-            width: 80vw;
-        }
-        .dica-cinco img {
-            height: 50vw;
-            width: 84vw;
-            top: 502vw;
-            left: 8vw;
-        }
-        .dica-cinco div {
-            height: 73vw;
-            width: 100%;
-            top: 537vw;
-            left: 0;
-            background-color: #9767A9;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-left: 7vw;
-        }
-        .dica-cinco h3 {
-            border: solid greenyellow;
-            height: 10vw;
-            width: 70vw;
-            font-size: 5vw;
-            font-family: 'Playfair Display';
-        }
-        .dica-cinco p {
-            font-size: 3.5vw;
-            text-align: left;
-            width: 80vw;
-        }
-        .dica-seis img {
-            height: 50vw;
-            width: 84vw;
-            top: 612vw;
-            left: 8vw;
-        }
-        .dica-seis div {
-            height: 60vw;
-            width: 100%;
-            top: 655vw;
-            left: 0;
-            background-color: #9767A9;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-left: 7vw;
-        }
-        .dica-seis h3 {
-            border: solid greenyellow;
-            height: 10vw;
-            width: 70vw;
-            font-size: 5vw;
-            font-family: 'Playfair Display';
-        }
-        .dica-seis p {
-            font-size: 3.5vw;
-            text-align: left;
-            width: 80vw;
-        }
-        .dica-sete img {
-            height: 50vw;
-            width: 84vw;
-            top: 717vw;
-            left: 8vw;
-        }
-        .dica-sete div {
-            height: 53vw;
-            width: 100%;
-            top: 758vw;
-            left: 0;
-            background-color: #9767A9;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-left: 7vw;
-        }
-        .dica-sete h3 {
-            border: solid greenyellow;
-            height: 10vw;
-            width: 70vw;
-            font-size: 5vw;
-            font-family: 'Playfair Display';
-        }
-        .dica-sete p {
-            font-size: 3.5vw;
-            text-align: left;
-            width: 85vw;
-        }
-        .box-fio-de-cabelo {
-            height: 10vw;
-            width: 100%;
-            top: 815vw;
-            left: 0;
-            border: solid aqua;
-            display: flex;
-            justify-content: center;
-        }
-        .fio-de-cabelo {
-            height: 7.5vw;
-            width: 40vw;
-        }
-        .container-imagens-finais {
-            display: flex;
-            justify-content: center;
-        }
-        .box-imagens-finais {
-            border: solid red;
-            background-color: white;
-            height: 100vw;
-            width: 80vw;
-            display: flex;
-            flex-wrap: wrap;
-            position: relative;
-            top: 828vw;
-        }
-        .box-1-2 {
-            display: flex;
-        }
-        .imagens-finais-1 {
-            height: 40vw;
-            width: 30vw;
-        }
-        .imagens-finais-2 {
-            height: 20vw;
-            width: 50vw;
-            padding-top: 0.5vw;
-        }
-        .box-3-4-5 {
-            display: flex;
-        }
-        .imagens-finais-3 {
-            height: 17vw;
-            width: 10vw;
-        }
-        .imagens-finais-4 {
-            height: 17vw;
-            width: 10vw;
-            padding-top: 0.5vw;
-        }
-        .imagens-finais-5 {
-            height: 16vw;
-            width: 30vw;
-            padding-top: 0.5vw;
-        }
-        .box-6-7 {
-            display: flex;
-        }
-        .imagens-finais-6 {
-            height: 27vw;
-            width: 14vw;
-        }
-        .imagens-finais-7 {
-            height: 10vw;
-            width: 14vw;
-            padding-top: 0.5vw;
-        }
-        .box-8 {
-            display: flex;
-        }
-        .imagens-finais-8 {
-            height: 37vw;
-            width: 16vw;
-        }
-        .box-9-10 {
-            display: flex;
-        }
-        .imagens-finais-9 {
-            height: 12vw;
-            width: 12vw;
-        }
-        .imagens-finais-10 {
-            height: 25vw;
-            width: 12vw;
-            padding-top: 0.5vw;
-        }
+
+@media(max-width: 480px) {
+    .container-menu {
+        display: block;
     }
+    header {
+        display: none;
+    }
+    .logo-to-de-cacho {
+        height: 40px;
+        width: auto;
+        padding-top: 1vw;
+    }
+    .container-menu {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .buscar {
+        display: none;
+    }
+    .redes-sociais {
+        display: none;
+    }
+    header {
+        width: 100vw;
+        height: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-cabeludo {
+        height: 60vh;
+        width: 100vw;
+    }
+    .cabeludo {
+        height: 100%;
+        background-image: url(/crespos/assets/cabeludo@2x.png);
+        background-size: 100vw 60vh;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    h1 {
+        height: 30vw;
+        width: 60vw;
+        position: relative;
+        left: 20px;
+        top: 70px;
+        font-size: 12vw;
+        font-family: 'Playfair Display';
+    }
+    .box-p-incio {
+        height: 20vw;
+        width: 57vw;
+        position: absolute;
+        top: 180px;
+        left: 20px;
+    }
+    .p-inicio {
+        font-size: 5vw;
+    }
+    .introdução {
+        height: 83vw;
+        width: 100vw;
+        background-color: #9767A9;
+        position: relative;
+    }
+    .titulo-intro {
+        height: 50px;
+        width: 73vw;
+        color: white;
+        font-family: 'Playfair Display';
+        font-size: 3vw;
+        position: absolute;
+        left: 30px;
+        top: 0;
+        padding: 0;
+    }
+    .p-intro {
+        height: 60vw;
+        width: 80vw;
+        color: white;
+        position: absolute;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        left: 30px;
+    }
+    .ps-intro {
+        font-size: 3.2vw;
+        padding-top: 0;
+    }
+    .dicas-numeradas {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .dica-um img {
+        height: 40vw;
+        width: 84vw;
+        top: 10px;
+    }
+    .dica-um div {
+        height: 95vw;
+        width: 100%;
+        top: 28vw;
+        left: 0;
+        background-color: #9767A9;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 7vw;
+    }
+    .dica-um h3 {
+        height: 15vw;
+        width: 53vw;
+        font-size: 5vw;
+        font-family: 'Playfair Display';
+    }
+    .dica-um p {
+        font-size: 3.5vw;
+        padding-top: 1.5vw;
+        width: 80vw;
+    }
+    .dica-dois img {
+        height: 50vw;
+        width: 84vw;
+        top: 125vw;
+        left: 8vw;
+    }
+    .dica-dois div {
+        height: 105vw;
+        width: 100%;
+        top: 170vw;
+        left: 0;
+        background-color: #9767A9;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 7vw;
+    }
+    .dica-dois h3 {
+        height: 10vw;
+        width: 60vw;
+        font-size: 5vw;
+        font-family: 'Playfair Display';
+    }
+    .dica-dois p {
+        font-size: 3.5vw;
+        text-align: left;
+        padding-top: 5vw;
+        width: 85vw;
+    }
+    .dica-tres img {
+        height: 50vw;
+        width: 84vw;
+        top: 277vw;
+    }
+    .dica-tres div {
+        height: 65vw;
+        width: 100%;
+        top: 320vw;
+        left: 0;
+        background-color: #9767A9;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+    .dica-tres h3 {
+        border: solid #9767A9;
+        height: 15vw;
+        width: 45vw;
+        font-size: 5vw;
+        font-family: 'Playfair Display';
+    }
+    .dica-tres p {
+        font-size: 3.5vw;
+        text-align: left;
+        width: 75vw;
+    }
+    .dica-quatro img {
+        height: 50vw;
+        width: 84vw;
+        top: 387vw;
+        left: 8vw;
+    }
+    .dica-quatro div {
+        height: 65vw;
+        width: 100%;
+        top: 435vw;
+        left: 0;
+        background-color: #9767A9;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 7vw;
+    }
+    .dica-quatro h3 {
+        height: 10vw;
+        width: 70vw;
+        font-size: 5vw;
+        font-family: 'Playfair Display';
+    }
+    .dica-quatro p {
+        font-size: 3.5vw;
+        text-align: left;
+        width: 80vw;
+    }
+    .dica-cinco img {
+        height: 50vw;
+        width: 84vw;
+        top: 502vw;
+        left: 8vw;
+    }
+    .dica-cinco div {
+        height: 73vw;
+        width: 100%;
+        top: 537vw;
+        left: 0;
+        background-color: #9767A9;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 7vw;
+    }
+    .dica-cinco h3 {
+        height: 10vw;
+        width: 70vw;
+        font-size: 5vw;
+        font-family: 'Playfair Display';
+    }
+    .dica-cinco p {
+        font-size: 3.5vw;
+        text-align: left;
+        width: 80vw;
+    }
+    .dica-seis img {
+        height: 50vw;
+        width: 84vw;
+        top: 612vw;
+        left: 8vw;
+    }
+    .dica-seis div {
+        height: 60vw;
+        width: 100%;
+        top: 655vw;
+        left: 0;
+        background-color: #9767A9;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 7vw;
+    }
+    .dica-seis h3 {
+        height: 10vw;
+        width: 70vw;
+        font-size: 5vw;
+        font-family: 'Playfair Display';
+    }
+    .dica-seis p {
+        font-size: 3.5vw;
+        text-align: left;
+        width: 80vw;
+    }
+    .dica-sete img {
+        height: 50vw;
+        width: 84vw;
+        top: 717vw;
+        left: 8vw;
+    }
+    .dica-sete div {
+        height: 53vw;
+        width: 100%;
+        top: 758vw;
+        left: 0;
+        background-color: #9767A9;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 7vw;
+    }
+    .dica-sete h3 {
+        height: 10vw;
+        width: 70vw;
+        font-size: 5vw;
+        font-family: 'Playfair Display';
+    }
+    .dica-sete p {
+        font-size: 3.5vw;
+        text-align: left;
+        width: 85vw;
+    }
+    .box-fio-de-cabelo {
+        height: 10vw;
+        width: 100%;
+        top: 818vw;
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .fio-de-cabelo {
+        height: 7.5vw;
+        width: 40vw;
+    }
+    .box-grid {
+        position: relative;
+        top: 830vw;
+        width: auto;
+        height: auto;
+        padding: 3vw;
+    }
+    .img-grid1 {
+        height: 60vw;
+        width: 48vw;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .img-grid2 {
+        height: 40vw;
+        width: 95vw;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    .img-grid3 {
+        height: 25vw;
+        width: 24vw;
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .img-grid4 {
+        height: 25vw;
+        width: 23vw;
+        grid-column: 4;
+        grid-row: 1;
+    }
+    .img-grid5 {
+        height: 34vw;
+        width: 47vw;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        padding-top: 1vw;
+    }
+    .img-grid6 {
+        height: 67vw;
+        width: 47vw;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
+    .img-grid7 {
+        height: 21vw;
+        width: 24vw;
+        grid-column: 2;
+        grid-row: 8;
+    }
+    .img-grid8 {
+        height: 46vw;
+        width: 23vw;
+        grid-column: 1;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    .img-grid9 {
+        height: 21vw;
+        width: 24vw;
+        grid-column: 1;
+        grid-row: 8;
+    }
+    .img-grid10 {
+        height: 46vw;
+        width: 24vw;
+        grid-column: 2;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    .box-footer {
+        display: none;
+    }
+    .box-setas-footer {
+        display: none;
+    }
+    .footer-mobile {
+        height: 40vw;
+        width: 100%;
+        position: relative;
+        top: 830vw;
+        display: flex;
+    }
+    .logos-setas {
+        display: flex;
+        justify-content: space-between;
+        height: 15vw;
+        width: 100%;
+        padding: 3vw;
+    }
+    .redes-sociais-footer {
+        height: 10vw;
+    }
+    .setas-footer {
+        height: 8vw;
+    }
+    .referencias-mobile {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.3vw;
+        position: relative;
+        top: 815vw;
+        padding-left: 3vw;
+    }
+}
