@@ -641,8 +641,8 @@ h1 {
         height: 30vw;
         width: 60vw;
         position: relative;
-        left: 20px;
-        top: 70px;
+        left: 8vw;
+        top: 20vw;
         font-size: 12vw;
         font-family: 'Playfair Display';
     }
@@ -657,7 +657,7 @@ h1 {
         font-size: 5vw;
     }
     .introdução {
-        height: 83vw;
+        height: 77vw;
         width: 100vw;
         background-color: #9767A9;
         position: relative;
@@ -667,7 +667,7 @@ h1 {
         width: 73vw;
         color: white;
         position: absolute;
-        left: 30px;
+        left: 10vw;
         top: 0;
         padding: 0;
     }
@@ -701,19 +701,19 @@ h1 {
     .dica-um img {
         height: 40vw;
         width: 84vw;
-        top: 10px;
+        top: 12px;
     }
     .dica-um div {
-        height: 95vw;
+        height: 87vw;
         width: 100%;
-        top: 28vw;
+        top: 29vw;
         left: 0;
         background-color: #9767A9;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 7vw;
+        padding-left: 9vw;
     }
     .dica-um h3 {
         height: 15vw;
@@ -729,20 +729,20 @@ h1 {
     .dica-dois img {
         height: 50vw;
         width: 84vw;
-        top: 125vw;
+        top: 120vw;
         left: 8vw;
     }
     .dica-dois div {
-        height: 105vw;
+        height: 98vw;
         width: 100%;
-        top: 170vw;
+        top: 165vw;
         left: 0;
         background-color: #9767A9;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 7vw;
+        padding-left: 9vw;
     }
     .dica-dois h3 {
         height: 10vw;
@@ -759,19 +759,19 @@ h1 {
     .dica-tres img {
         height: 50vw;
         width: 84vw;
-        top: 277vw;
+        top: 267vw;
     }
     .dica-tres div {
         height: 65vw;
         width: 100%;
-        top: 320vw;
+        top: 306vw;
         left: 0;
         background-color: #9767A9;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 30px;
+        padding-left: 9vw;
     }
     .dica-tres h3 {
         border: solid #9767A9;
@@ -788,20 +788,20 @@ h1 {
     .dica-quatro img {
         height: 50vw;
         width: 84vw;
-        top: 387vw;
+        top: 375vw;
         left: 8vw;
     }
     .dica-quatro div {
-        height: 65vw;
+        height: 64vw;
         width: 100%;
-        top: 435vw;
+        top: 425vw;
         left: 0;
         background-color: #9767A9;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 7vw;
+        padding-left: 9vw;
     }
     .dica-quatro h3 {
         height: 10vw;
@@ -817,20 +817,20 @@ h1 {
     .dica-cinco img {
         height: 50vw;
         width: 84vw;
-        top: 502vw;
+        top: 493vw;
         left: 8vw;
     }
     .dica-cinco div {
         height: 73vw;
         width: 100%;
-        top: 537vw;
+        top: 530vw;
         left: 0;
         background-color: #9767A9;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 7vw;
+        padding-left: 9vw;
     }
     .dica-cinco h3 {
         height: 10vw;
@@ -846,20 +846,20 @@ h1 {
     .dica-seis img {
         height: 50vw;
         width: 84vw;
-        top: 612vw;
+        top: 607vw;
         left: 8vw;
     }
     .dica-seis div {
         height: 60vw;
         width: 100%;
-        top: 655vw;
+        top: 650vw;
         left: 0;
         background-color: #9767A9;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 7vw;
+        padding-left: 9vw;
     }
     .dica-seis h3 {
         height: 10vw;
@@ -875,20 +875,20 @@ h1 {
     .dica-sete img {
         height: 50vw;
         width: 84vw;
-        top: 717vw;
+        top: 714vw;
         left: 8vw;
     }
     .dica-sete div {
-        height: 53vw;
+        height: 50vw;
         width: 100%;
-        top: 758vw;
+        top: 756vw;
         left: 0;
         background-color: #9767A9;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 7vw;
+        padding-left: 9vw;
     }
     .dica-sete h3 {
         height: 10vw;
@@ -904,7 +904,7 @@ h1 {
     .box-fio-de-cabelo {
         height: 10vw;
         width: 100%;
-        top: 818vw;
+        top: 816vw;
         left: 0;
         display: flex;
         justify-content: center;
@@ -1026,5 +1026,6 @@ h1 {
         position: relative;
         top: 815vw;
         padding-left: 3vw;
+        padding-bottom: 17vw;
     }
 }
